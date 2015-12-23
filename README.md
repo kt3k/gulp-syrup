@@ -1,4 +1,4 @@
-# gulp-syrup v1.0.2
+# gulp-syrup v1.0.2 (WIP)
 
 > Syntax syrup for gulpfile
 
