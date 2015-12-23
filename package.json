@@ -1,0 +1,26 @@
+{
+  "name": "gulp-syrup",
+  "version": "1.0.0",
+  "description": "Syntax syrup for gulpfile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kt3k/gulp-syrup.git"
+  },
+  "keywords": [
+    "gulp",
+    "not-a-gulp-plugin"
+  ],
+  "author": "Yoshiya Hinosawa <stibium121@gmail.com> (https://twitter.com/kt3k)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kt3k/gulp-syrup/issues"
+  },
+  "homepage": "https://github.com/kt3k/gulp-syrup#readme",
+  "dependencies": {
+    "gulp-load-plugins": "^1.1.0"
+  }
+}
