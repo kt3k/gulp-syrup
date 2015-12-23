@@ -4,7 +4,8 @@
   "description": "Syntax syrup for gulpfile",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "souffle",
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,10 @@
   "homepage": "https://github.com/kt3k/gulp-syrup#readme",
   "dependencies": {
     "gulp-load-plugins": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "souffle-cli": "^2.0.2",
+    "tape": "^4.3.0"
   }
 }
