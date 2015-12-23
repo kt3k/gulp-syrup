@@ -4,6 +4,8 @@
 
 # Usage
 
+In your gulpfile, `gulp-syrup` works like the following.
+
 ```js
 let {task, src, dest, $} = require('gulp-syrup')(require('gulp'))
 
@@ -12,6 +14,8 @@ task('default', () =>
     .pipe($.somePlugin())
     .pipe(dest('dist/')))
 ```
+
+`gulp-syrup` returns the static versions of the gulp APIs and `$` as `gulp-load-plugins`.
 
 ## Expose to globals
 
@@ -25,6 +29,9 @@ task('default', () =>
     .pipe($.somePlugin())
     .pipe(dest('dist/')))
 ```
+
+*This exposes the gulp APIs and `gulp-load-plugins` to the global namespace of gulpfile i.e. exposes `src`, `dest`, `task`, `watch` and `$`.*
+
 
 # Install
 
