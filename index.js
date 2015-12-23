@@ -1,21 +1,28 @@
 module.exports = function (gulp) {
-    var words = {}
+    'use strict'
 
-    words.src = gulp.src
-    words.dest = gulp.dest
-    words.task = gulp.task.bind(gulp)
-    words.watch = gulp.watch.bind(gulp)
-    words.$ = require('gulp-load-plugins')()
+    var src = gulp.src
+    var dest = gulp.dest
+    var task = gulp.task.bind(gulp)
+    var watch = gulp.watch.bind(gulp)
+    var $ = require('gulp-load-plugins')()
 
-    return words
-}
+    var globals = function () {
 
-module.exports.globals = function (gulp) {
-    var words = module.exports(gulp)
+        globals.src = src
+        globals.dest = dest
+        globals.task = task
+        globals.watch = watch
+        globals.$ = $
 
-    globals.src = words.src
-    globals.dest = words.dest
-    globals.task = words.task
-    globals.watch = words.watch
-    globals.$ = words.$
+    }
+
+    return {
+        src: src,
+        dest: dest,
+        task: task,
+        watch: watch,
+        $: $,
+        globals: globals
+    }
 }
