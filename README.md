@@ -7,7 +7,7 @@
 In your gulpfile, `gulp-syrup` works like the following.
 
 ```js
-let {task, src, dest, $} = require('gulp-syrup')(require('gulp'))
+const {task, src, dest, $} = require('gulp-syrup')(require('gulp'))
 
 task('default', () =>
   src('src/**/*.js')
