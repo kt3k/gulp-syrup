@@ -17,11 +17,11 @@ module.exports = function (gulp, config) {
 
     var globals = function () {
 
-        globals.src = src
-        globals.dest = dest
-        globals.task = task
-        globals.watch = watch
-        globals.$ = $
+        global.src = src
+        global.dest = dest
+        global.task = task
+        global.watch = watch
+        global.$ = $
 
     }
 

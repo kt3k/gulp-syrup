@@ -15,3 +15,15 @@ test('gulp-syrup', function (t) {
     t.assert(syrup(gulp).$ instanceof Object, '$ prop is an object')
     t.assert(syrup(gulp).globals instanceof Function, 'globals prop is a function')
 })
+
+test('gulp-syrup().globals() sets global apis', function (t) {
+    t.plan(5)
+
+    syrup(gulp).globals()
+
+    t.assert(task instanceof Function, 'task is a function')
+    t.assert(watch instanceof Function, 'watch is a function')
+    t.assert(src instanceof Function, 'src is a function')
+    t.assert(dest instanceof Function, 'dest is a function')
+    t.assert($ instanceof Object, '$ is a object')
+})
